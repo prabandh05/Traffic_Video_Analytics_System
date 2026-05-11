@@ -1,0 +1,18 @@
+# ByteTrack configuration tuned for traffic video scenarios
+# Used by ultralytics model.track() method
+#
+# Key tuning rationale:
+# - track_high_thresh: 0.5 — vehicles are usually clearly visible in traffic cams
+# - track_low_thresh: 0.1 — catch partially occluded vehicles
+# - new_track_thresh: 0.6 — avoid spurious tracks from noise
+# - track_buffer: 30 — keep lost tracks for 1 second at 30fps (handles brief occlusions)
+# - match_thresh: 0.8 — strict matching to avoid ID switches
+
+tracker_type: bytetrack
+
+track_high_thresh: 0.5
+track_low_thresh: 0.1
+new_track_thresh: 0.6
+track_buffer: 30
+match_thresh: 0.8
+fuse_score: true

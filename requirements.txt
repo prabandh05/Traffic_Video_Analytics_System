@@ -1,0 +1,19 @@
+# Detection & Tracking
+ultralytics>=8.1.0
+
+# Video Processing
+opencv-python-headless>=4.8.0
+numpy>=1.24.0
+
+# Backend API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+pydantic>=2.0.0
+
+# Export
+openpyxl>=3.1.0
+
+# GPU Support (optional - install separately if CUDA available)
+# torch>=2.0.0
+# torchvision>=0.15.0

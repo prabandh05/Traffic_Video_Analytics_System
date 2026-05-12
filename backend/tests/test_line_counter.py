@@ -91,10 +91,12 @@ def test_diagonal_line():
     counter = LineCrossingCounter(line_start=(100, 500), line_end=(700, 100))
 
     # Vehicle crossing from left to right across the diagonal
+    # At x=200, y_line ≈ 433. At x=500, y_line ≈ 233. 
+    # y=350 is between them, so (200, 350) is on one side and (500, 350) is on the other.
     crossed = counter.check_crossing(
         track_id=10,
-        prev_center=(200, 200),
-        curr_center=(500, 200),
+        prev_center=(200, 350),
+        curr_center=(500, 350),
         vehicle_category="Four Wheeler",
     )
 

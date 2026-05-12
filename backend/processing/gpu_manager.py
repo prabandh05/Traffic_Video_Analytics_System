@@ -44,7 +44,7 @@ def detect_gpu() -> Optional[dict]:
         device_count = torch.cuda.device_count()
         device = torch.cuda.get_device_properties(0)
 
-        vram_total_mb = device.total_mem // (1024 * 1024)
+        vram_total_mb = device.total_memory // (1024 * 1024)
 
         # Get free memory
         vram_free_mb = 0

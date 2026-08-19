@@ -231,15 +231,16 @@ videos/completed/*
 !videos/**/.gitkeep
 
 # Model weights
-models/*.pt
-models/*.onnx
+models/*
+!models/README.md
 
 # Output files
 outputs/excel/*.xlsx
 outputs/excel/*.csv
 outputs/snapshots/*
 !outputs/**/.gitkeep
-input_videos/
+input_videos/*
+!input_videos/README.md
 
 # Frontend build & deps
 frontend/node_modules/
@@ -258,6 +259,9 @@ best.pt
 yolov8l.pt
 
 # Auto-generated project files
-datasets/
-configs/
-processed_logs/
+datasets/*
+!datasets/README.md
+configs/*
+!configs/README.md
+processed_logs/*
+!processed_logs/README.md

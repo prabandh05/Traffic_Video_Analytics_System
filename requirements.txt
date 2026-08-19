@@ -1,0 +1,22 @@
+# Traffic Video Analytics System - Pipeline Requirements
+# Setup: source venv/bin/activate && pip install -r requirements.txt
+
+# Detection & Tracking
+ultralytics>=8.1.0
+
+# Data Handling & Config
+pyyaml>=6.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Video Processing
+opencv-python>=4.8.0
+
+# Excel Export
+openpyxl>=3.1.0
+
+# Backend API dependencies maintained for existing code
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+pydantic>=2.0.0
